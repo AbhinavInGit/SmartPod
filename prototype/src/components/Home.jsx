@@ -19,9 +19,18 @@ function Home({ pods }) {
       ))}
 
       <br />
-      <Link to="/create">
-        <button>Create New Pod</button>
-      </Link>
+      
+      {/* --- Button Container --- */}
+      <div className="home-actions-container">
+        <Link to="/create">
+          <button>Create New Pod</button>
+        </Link>
+        <Link to="/microlearning">
+          <button className="animated-gradient-button">
+            Adaptive Microlearning
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

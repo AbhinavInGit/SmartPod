@@ -1,100 +1,106 @@
 {
-  "questions": [
-    {
-      "question": "What type of algorithm is Merge Sort?",
-      "options": [
-        { "text": "Greedy Algorithm", "isCorrect": false },
-        { "text": "Divide and Conquer", "isCorrect": true },
-        { "text": "Dynamic Programming", "isCorrect": false },
-        { "text": "Brute Force", "isCorrect": false }
-      ],
-      "explanation": "Merge Sort is a classic example of a Divide and Conquer algorithm."
-    },
-    {
-      "question": "What is the time complexity of Merge Sort in the worst case?",
-      "options": [
-        { "text": "O(n)", "isCorrect": false },
-        { "text": "O(n log n)", "isCorrect": true },
-        { "text": "O(n^2)", "isCorrect": false },
-        { "text": "O(log n)", "isCorrect": false }
-      ],
-      "explanation": "Merge Sort has a time complexity of O(n log n) in all cases (worst, average, and best)."
-    },
-    {
-        "question": "Is Merge Sort a stable sorting algorithm?",
+  "Merge Sort": {
+    "questions": [
+      {
+        "question": "What type of algorithm is Merge Sort?",
         "options": [
-          { "text": "Yes", "isCorrect": true },
-          { "text": "No", "isCorrect": false }
+          { "text": "Greedy Algorithm", "isCorrect": false },
+          { "text": "Divide and Conquer", "isCorrect": true },
+          { "text": "Dynamic Programming", "isCorrect": false },
+          { "text": "Brute Force", "isCorrect": false }
         ],
-        "explanation": "Stable sorting algorithms maintain the relative order of records with equal keys. Merge sort is a stable sort."
+        "explanation": "Merge Sort is a classic example of a Divide and Conquer algorithm."
       },
       {
-        "question": "Who invented the Merge Sort algorithm?",
+        "question": "What is the time complexity of Merge Sort in the worst case?",
         "options": [
-          { "text": "Alan Turing", "isCorrect": false },
-          { "text": "John von Neumann", "isCorrect": true },
-          { "text": "Donald Knuth", "isCorrect": false },
-          { "text": "Tony Hoare", "isCorrect": false }
+          { "text": "O(n)", "isCorrect": false },
+          { "text": "O(n log n)", "isCorrect": true },
+          { "text": "O(n^2)", "isCorrect": false },
+          { "text": "O(log n)", "isCorrect": false }
         ],
-        "explanation": "John von Neumann invented the merge sort algorithm in 1945."
-      },
-      {
-        "question": "What is the space complexity of Merge Sort?",
-        "options": [
-          { "text": "O(1)", "isCorrect": false },
-          { "text": "O(log n)", "isCorrect": false },
-          { "text": "O(n)", "isCorrect": true },
-          { "text": "O(n^2)", "isCorrect": false }
-        ],
-        "explanation": "Merge sort requires a temporary array of size n to store the merged sub-arrays, so its space complexity is O(n)."
-      },
-      {
-        "question": "The 'merge' step in Merge Sort involves combining two...",
-        "options": [
-          { "text": "unsorted arrays", "isCorrect": false },
-          { "text": "sorted arrays", "isCorrect": true },
-          { "text": "arrays of different sizes", "isCorrect": false },
-          { "text": "empty arrays", "isCorrect": false }
-        ],
-        "explanation": "The core of the merge sort algorithm is the merging of two already sorted sub-arrays into a single sorted array."
-      },
-      {
-        "question": "Merge Sort is a...?",
-        "options": [
-          { "text": "In-place algorithm", "isCorrect": false },
-          { "text": "Out-of-place algorithm", "isCorrect": true }
-        ],
-        "explanation": "Since Merge Sort requires extra space proportional to the input size, it is not an in-place algorithm."
-      },
-      {
-        "question": "The 'divide' step in Merge Sort recursively splits the array in...",
-        "options": [
-          { "text": "half", "isCorrect": true },
-          { "text": "thirds", "isCorrect": false },
-          { "text": "quarters", "isCorrect": false },
-          { "text": "random chunks", "isCorrect": false }
-        ],
-        "explanation": "The 'divide' step of the algorithm involves recursively dividing the array into two halves until each sub-array contains a single element."
-      },
-      {
-        "question": "Which of the following is a disadvantage of Merge Sort?",
-        "options": [
-          { "text": "Poor performance on large datasets", "isCorrect": false },
-          { "text": "Requires extra space", "isCorrect": true },
-          { "text": "It is not a stable sort", "isCorrect": false },
-          { "text": "It has a worst-case time complexity of O(n^2)", "isCorrect": false }
-        ],
-        "explanation": "The main disadvantage of Merge Sort is that it requires O(n) auxiliary space."
-      },
-      {
-        "question": "Merge sort is preferred for sorting...?",
-        "options": [
-          { "text": "arrays", "isCorrect": false },
-          { "text": "linked lists", "isCorrect": true },
-          { "text": "binary trees", "isCorrect": false },
-          { "text": "hash tables", "isCorrect": false }
-        ],
-        "explanation": "Merge sort is often preferred for sorting linked lists because it doesn't require random access to elements and the merge operation can be implemented with O(1) space for linked lists."
+        "explanation": "Merge Sort has a time complexity of O(n log n) in all cases (worst, average, and best)."
       }
-  ]
+    ]
+  },
+  "Binary Search": {
+    "questions": [
+      {
+        "question": "What is a prerequisite for Binary Search?",
+        "options": [
+          { "text": "The list must be unsorted", "isCorrect": false },
+          { "text": "The list must be sorted", "isCorrect": true },
+          { "text": "The list must contain only unique elements", "isCorrect": false },
+          { "text": "The list must be of a certain size", "isCorrect": false }
+        ],
+        "explanation": "Binary search requires the array or list to be sorted to work correctly."
+      },
+      {
+        "question": "What is the time complexity of Binary Search?",
+        "options": [
+          { "text": "O(n)", "isCorrect": false },
+          { "text": "O(n log n)", "isCorrect": false },
+          { "text": "O(log n)", "isCorrect": true },
+          { "text": "O(1)", "isCorrect": false }
+        ],
+        "explanation": "Due to its divide-and-conquer nature, binary search has a logarithmic time complexity."
+      }
+    ]
+  },
+  "Linked List": {
+    "questions": [
+        {
+            "question": "Which of the following is not a type of linked list?",
+            "options": [
+              { "text": "Singly Linked List", "isCorrect": false },
+              { "text": "Doubly Linked List", "isCorrect": false },
+              { "text": "Circular Linked List", "isCorrect": false },
+              { "text": "Sequential Linked List", "isCorrect": true }
+            ],
+            "explanation": "Singly, Doubly, and Circular are all standard types of linked lists. Sequential is not a standard term."
+          }
+    ]
+  },
+  "Hash Table": {
+    "questions": [
+        {
+            "question": "What is a collision in a hash table?",
+            "options": [
+              { "text": "Two keys having the same value", "isCorrect": false },
+              { "text": "Two keys hashing to the same index", "isCorrect": true },
+              { "text": "Two different hash tables storing the same key", "isCorrect": false },
+              { "text": "A key that is not found in the table", "isCorrect": false }
+            ],
+            "explanation": "A collision occurs when the hash function generates the same index for more than one key."
+          }
+    ]
+  },
+  "Breadth-First Search (BFS)": {
+    "questions": [
+        {
+            "question": "What data structure is typically used to implement BFS?",
+            "options": [
+              { "text": "Stack", "isCorrect": false },
+              { "text": "Queue", "isCorrect": true },
+              { "text": "Array", "isCorrect": false },
+              { "text": "Linked List", "isCorrect": false }
+            ],
+            "explanation": "BFS uses a queue to store the nodes to visit, ensuring that nodes are explored level by level."
+          }
+    ]
+  },
+  "Depth-First Search (DFS)": {
+    "questions": [
+        {
+            "question": "What data structure is typically used to implement DFS?",
+            "options": [
+              { "text": "Queue", "isCorrect": false },
+              { "text": "Stack", "isCorrect": true },
+              { "text": "Hash Table", "isCorrect": false },
+              { "text": "Tree", "isCorrect": false }
+            ],
+            "explanation": "DFS uses a stack (often the call stack via recursion) to explore as far as possible down one branch before backtracking."
+          }
+    ]
+  }
 }

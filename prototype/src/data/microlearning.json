@@ -1,0 +1,77 @@
+{
+  "title": "Red-Black Trees",
+  "chunks": [
+    {
+      "id": "chunk1",
+      "content": "A Red-Black Tree is a type of self-balancing binary search tree. Each node of the binary tree has an extra bit, and this bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions. By maintaining balance, red-black trees guarantee that operations like search, insert, and delete can be performed in O(log n) time, where n is the number of nodes in the tree. This efficiency makes them valuable in many applications, such as the implementation of associative arrays and process schedulers in operating systems.",
+      "quiz": {
+        "questions": [
+          {
+            "question": "What is the primary purpose of the 'color' bit in a Red-Black Tree node?",
+            "options": [
+              { "text": "To store extra data", "isCorrect": false },
+              { "text": "To ensure the tree remains balanced", "isCorrect": true },
+              { "text": "To make the tree visually appealing", "isCorrect": false },
+              { "text": "To indicate the node's value", "isCorrect": false }
+            ],
+            "explanation": "The color properties (red or black) are used to enforce rules that maintain the tree's balance, guaranteeing O(log n) performance."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chunk2",
+      "content": "Red-Black Trees are governed by a specific set of properties that must be maintained. First, every node is either red or black. Second, the root of the tree is always black. Third, every leaf node (typically a NIL or null node) is black. Fourth, if a node is red, then both its children are black. This is a crucial rule that prevents two red nodes from being adjacent in a path. Finally, for each node, all simple paths from that node to its descendant leaves contain the same number of black nodes. This property is known as the 'black-height' and is key to the tree's balance.",
+      "quiz": {
+        "questions": [
+          {
+            "question": "Which of the following is a valid property of a Red-Black Tree?",
+            "options": [
+              { "text": "The root can be red or black", "isCorrect": false },
+              { "text": "If a node is red, its children must also be red", "isCorrect": false },
+              { "text": "Every path from a node to its leaves has the same number of nodes", "isCorrect": false },
+              { "text": "If a node is red, its children must be black", "isCorrect": true }
+            ],
+            "explanation": "This rule is fundamental to preventing imbalances in the tree by ensuring red nodes are separated."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chunk3",
+      "content": "When a new node is inserted into a Red-Black Tree, it is always colored red. This choice is made because inserting a red node is less likely to violate the red-black properties than inserting a black node. While it might violate the 'no two adjacent red nodes' rule, it does not affect the 'black-height' property of the tree. After insertion, the tree is rebalanced through a process of 'recoloring' and 'rotations'. Recoloring involves changing the colors of nodes to restore the properties, while rotations are structural changes to the tree that rearrange nodes to restore balance without violating the binary search tree property.",
+      "quiz": {
+        "questions": [
+          {
+            "question": "A newly inserted node in a Red-Black Tree is always colored:",
+            "options": [
+              { "text": "Black", "isCorrect": false },
+              { "text": "Red", "isCorrect": true },
+              { "text": "The same color as its parent", "isCorrect": false },
+              { "text": "Based on its value", "isCorrect": false }
+            ],
+            "explanation": "Inserting a red node is less likely to violate the black-height property, making it easier to rebalance the tree."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chunk4",
+      "content": "Tree rotations (left and right) are the fundamental operations used to restructure the tree when an imbalance occurs. A left rotation on a node 'x' assumes that its right child is not a NIL node. The rotation makes the right child the new root of the subtree, with 'x' becoming its left child. A right rotation is the mirror opposite. These operations are carefully performed to maintain the inorder traversal sequence of the tree, thus preserving the binary search tree property. By combining rotations with recoloring, the Red-Black Tree can efficiently handle insertions and deletions while ensuring that the tree's height remains logarithmic.",
+      "quiz": {
+        "questions": [
+          {
+            "question": "What is the main purpose of 'rotations' in a Red-Black Tree?",
+            "options": [
+              { "text": "To change the colors of nodes", "isCorrect": false },
+              { "text": "To delete nodes from the tree", "isCorrect": false },
+              { "text": "To restructure the tree to maintain balance", "isCorrect": true },
+              { "text": "To search for a specific value", "isCorrect": false }
+            ],
+            "explanation": "Rotations are structural changes that help restore the tree's balance after insertions or deletions."
+          }
+        ]
+      }
+    }
+  ]
+}

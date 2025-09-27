@@ -9,7 +9,6 @@ function Navbar() {
           🚀 SmartPods
         </Link>
         <div className="navbar-links">
-          <NavLink to="/" className="nav-link">Home</NavLink>
           <NavLink to="/contact" className="nav-link">Contact Us</NavLink>
           <NavLink to="/info" className="nav-link">Info</NavLink>
         </div>

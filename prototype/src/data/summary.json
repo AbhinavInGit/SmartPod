@@ -1,3 +1,26 @@
-{
-  "summary": "Merge sort is a highly efficient, general-purpose, comparison-based sorting algorithm. It is a divide and conquer algorithm that was invented by John von Neumann in 1945. The algorithm divides the unsorted list into n sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sub-list remaining."
-}
+[
+  {
+    "topic": "Merge Sort",
+    "summary": "Merge sort is a highly efficient, general-purpose, comparison-based sorting algorithm. It is a divide and conquer algorithm that was invented by John von Neumann in 1945. The algorithm divides the unsorted list into n sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sub-list remaining."
+  },
+  {
+    "topic": "Binary Search",
+    "summary": "Binary search is a fast search algorithm with a time complexity of O(log n). This algorithm works on the principle of divide and conquer. For this algorithm to work, the data collection should be in a sorted form. It works by repeatedly dividing the search interval in half."
+  },
+  {
+    "topic": "Linked List",
+    "summary": "A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers. In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list."
+  },
+  {
+    "topic": "Hash Table",
+    "summary": "A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found."
+  },
+  {
+    "topic": "Breadth-First Search (BFS)",
+    "summary": "Breadth-First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key') and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level."
+  },
+  {
+    "topic": "Depth-First Search (DFS)",
+    "summary": "Depth-First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking."
+  }
+]
