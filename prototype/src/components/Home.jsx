@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaHome } from "react-icons/fa";
 function Home({ pods }) {
   return (
     <div className="card">
-      <h2>🏠 Home</h2>
+      <h2><FaHome /> Home</h2>
       <p>Active Pods: {pods.length}</p>
 
       <h3>Available Pods</h3>
